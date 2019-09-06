@@ -7,7 +7,7 @@ pipeline {
             steps {
                 bat '''
                  cd rsvp-service
-                 .\mvnw -DskipTests clean compile
+                 ./mvnw -DskipTests clean compile
               '''
             }
         }
@@ -16,7 +16,7 @@ pipeline {
             steps {
                 bat '''
                  cd rsvp-service
-                     .\mvnw test
+                     ./mvnw test
               '''
             }
         }
@@ -25,7 +25,7 @@ pipeline {
             steps {
                 bat '''
                  cd rsvp-service
-                     .\mvnw -DskipTests install
+                     ./mvnw -DskipTests install
               '''
             }
         }
